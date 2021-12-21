@@ -1,0 +1,46 @@
+body {
+    width: 880px;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+
+section {
+    width: 800px; height: 950px;
+    background-color: aquamarine; 
+    display: flex;
+}
+
+#text {
+    padding: 15px;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 6vw;
+} 
+
+h2 {
+    font-size: 4vw;
+}
+
+h3{
+    font-size: 3vw;
+}
+
+nav{
+    width: 800px; height: 70px;
+    background-color: rgb(227, 185, 231);
+    padding: 15px
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  0px 10px 0px 10px;
+    font-size: 20px;
+
+}
+
+
