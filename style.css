@@ -5,13 +5,21 @@ body {
     font-family: 'Prompt', sans-serif;
 }
 
-section {
+main {
     width: 800px; height: 950px;
     background-color: aquamarine; 
+    animation-name: colors;
+    animation-duration: 7s;
     display: flex;
+    flex-direction: column;
 }
 
-#text {
+@keyframes colors {
+    from {background-color: aquamarine;}
+    to {background-color:pink}
+}
+
+#hello {
     padding: 15px;
     margin-left: 20px;
 }
@@ -28,10 +36,52 @@ h3{
     font-size: 3vw;
 }
 
+h4 {
+    font-size: 18px;
+}
+
+#center {
+    width: 800px;
+    height: 400px;
+}
+
+#goal{
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    background-color: greenyellow;
+    transition: width 4s;
+    border-radius: 30px;
+    margin-left: 5%;
+    margin-right: 20%;
+    text-align: left;
+  
+}
+
+#goal:hover {
+    width: 700px;
+    background-color: rgb(96, 96, 206);
+}
+
+#hiddentext {
+    height: 150px; width: 700px;
+    color: rgb(56, 5, 5);
+    font-size: 22px;
+    display: none;
+    
+    
+}
+
+#goal:hover #hiddentext {
+    display: inline-block;
+}
+
 nav{
     width: 800px; height: 70px;
     background-color: rgb(227, 185, 231);
-    padding: 15px
+    padding: 15px;
+    flex-wrap: wrap;
+
 }
 ul {
     list-style: none;
@@ -40,7 +90,9 @@ ul {
     justify-content: space-between;
     margin:  0px 10px 0px 10px;
     font-size: 20px;
-
 }
+
+
+
 
 
