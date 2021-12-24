@@ -124,6 +124,19 @@ p2{
 p3{
     margin-left: 120px;
 }
+
+
+img{
+    width: 400px;
+    height: 500px;
+float: right;
+}
+
+#aboutme{
+    display: flex;
+  flex-direction: column;
+  position: relative;
+
 }
 
 
