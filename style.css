@@ -1,22 +1,24 @@
 body {
-    width: 880px;
+    width: 100vw;
+    padding: 2%;
     font-family: 'Alata', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Prompt', sans-serif;
 }
 
 main {
-    width: 800px; height: 950px;
-    background-color: aquamarine; 
+    width: 100%; height: 950px;
+    background-color: black; 
+    color: white;
     animation-name: colors;
-    animation-duration: 7s;
+    animation-duration: 3s;
     display: flex;
     flex-direction: column;
 }
-
+/* backgound to change the color */
 @keyframes colors {
-    from {background-color: aquamarine;}
-    to {background-color:pink}
+    from {background-color: rgba(3, 37, 39, 0.961);}
+    to {background-color:rgb(87, 6, 21)}
 }
 
 #hello {
@@ -25,19 +27,24 @@ main {
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 3rem;
+    font-style: bold;
 } 
 
 h2 {
-    font-size: 4vw;
+    font-size: 2rem;
+    margin-left: 20px;
 }
 
 h3{
-    font-size: 3vw;
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 22px;
+    margin-left: 50px;
 }
 
 #center {
@@ -46,43 +53,56 @@ h4 {
 }
 
 #goal{
-    width: 400px;
-    height: 250px;
+    width: 60%;
+    height: 170px;
     padding: 10px;
-    background-color: greenyellow;
-    transition: width 4s;
+    background-color: rgb(240, 89, 215);
+    transition: width 3s;
     border-radius: 30px;
     margin-left: 5%;
     margin-right: 20%;
+    margin-bottom: 100px;
     text-align: left;
   
 }
+/* hover #goal to expand */
 
 #goal:hover {
-    width: 700px;
-    background-color: rgb(96, 96, 206);
+    width: 90%;
+    background-color: rgb(168, 168, 235);
+    border-right-style:ridge;
+    border-right-color: rgb(194, 146, 238);
+    
 }
 
+/* text show up at hover */
 #hiddentext {
     height: 150px; width: 700px;
     color: rgb(56, 5, 5);
     font-size: 22px;
     display: none;
-    
+    margin-left: 15px;
+        
     
 }
 
 #goal:hover #hiddentext {
     display: inline-block;
+    flex-wrap: flex;
+    
 }
 
 nav{
-    width: 800px; height: 70px;
+    width: 100%; height: 70px;
     background-color: rgb(227, 185, 231);
     padding: 15px;
     flex-wrap: wrap;
-
+    margin-bottom: 0;
+    
+   
 }
+
+
 ul {
     list-style: none;
     display: flex;
@@ -92,7 +112,19 @@ ul {
     font-size: 20px;
 }
 
+p1{
+    margin-left: 80px;
+    
+}
 
+p2{
+    margin-left: 100px;
+}
+
+p3{
+    margin-left: 120px;
+}
+}
 
 
 
