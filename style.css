@@ -29,24 +29,24 @@ block {
 
 /* backgound to change the color */
 @keyframes colors {
-    0% {background-color: red;}
-   25% {background-color: yellow;}
-   50% {background-color: blue;}
-   100% {background-color: green;}
+    0% {background-color:rgb(245, 170, 235)}
+   25% {background-color: rgb(146, 237, 243);}
+   50% {background-color: rgb(241, 193, 165);}
+   100% {background-color: rgb(232, 240, 164);}
     
 }
 
 div{
     box-sizing: border-box;
     width: 70vw;
-    height: 1000px;
+    height: fit-content;
     padding-left: 30vw;
 }
 
 #nav{
     width: 70vw; 
     height: 40px;
-    background-color: rgb(227, 185, 231);   
+    background-color: rgb(219, 215, 215);   
     padding-left: 0;
     position:fixed;
     z-index:1;
@@ -63,13 +63,17 @@ ul {
 }
 
 #description {
+    padding-top: 200px;
     padding-left: 0;
+    padding-bottom: 200px;
     
 
 }
 
 h1 {
     font-size: 5rem;
+    padding-left: 15px;
+    padding-top: 20px;
     
 } 
 
@@ -155,9 +159,9 @@ h6{
     display: inline-block;
     flex-wrap: flex;
     
-} */
+}
 
-
+ */
 
 
 
@@ -188,8 +192,13 @@ div #paragraph {
 }
 
 #aboutme img{
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
     width: 400px;
     height: 500px;
+    box-shadow: 0 0 10px grey;
     
     
 }
@@ -197,10 +206,10 @@ div #paragraph {
 #aboutme{
     display: flex;
     flex-direction: column;
-    width: 70vw; height: 100vh;
+    width: 70vw; 
     padding-left: 0;
     padding-bottom: 20px;
-    align-items: center;
+    text-align: left;
    
 }
 
@@ -214,10 +223,38 @@ div #article{
    
 }
 
-@media screen and (max-width: 768px){
-    img{
-        width: 200px;
-        height: 250px;   
-    } 
+#work, #project, #github {
+    padding-left: 0;
+   
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    text-align: left;
+
+}
+
+
+
+
+
+#imgwork, #imgproject, #imggithub{
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+    box-shadow: 0 0 10px grey;
+   
+    
+    
+}
+
+p{
+    font-size: 1.2rem;
+    margin-left: 10px;
+   
+   
 }
 
