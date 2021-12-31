@@ -8,15 +8,16 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 30%;
+    width: 70vw;
 }
 
 block {
     width: 30vw; height: 100vh;
-    background-color: rgb(140, 222, 233);
+    /* background-color: rgb(140, 222, 233);
     color: rgb(27, 4, 4);
     animation-name: colors;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -25,15 +26,24 @@ block {
     top: 0;
     bottom: 0;
     z-index: 2;
-   
+    background-image: url(../Su.png ); 
+    background-repeat: no-repeat;  
+    background-size: cover;
+    
+}
+
+section {
+    width: 70vw;
 }
 
 /* backgound to change the color */
 @keyframes colors {
-    0% {background-color:rgb(245, 170, 235)}
-   25% {background-color: rgb(146, 237, 243);}
-   50% {background-color: rgb(241, 193, 165);}
-   100% {background-color: rgb(232, 240, 164);}
+    0% {background-color:rgb(208, 201, 241)}
+   20% {background-color: rgb(160, 223, 235);}
+   40% {background-color: rgb(190, 245, 199);}
+   60% {background-color: rgb(213, 236, 175);}
+   80% {background-color: rgb(243, 217, 187);}
+   100% {background-color: rgb(247, 203, 244);}
     
 }
 
@@ -88,13 +98,13 @@ h2 {
     animation-iteration-count: infinite;
     
 }
-
+/* 
 @keyframes text {
     0%   {left:0px; top:0px;}
     25%  {left:300px; top:0px;}
     50%  {left:300px; top:300px;}
     75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px;}
+    100% {left:0px; top:0px;} */
 }
 
 h3{
@@ -198,9 +208,10 @@ div #paragraph {
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
     box-shadow: 0 0 10px grey;
+    border-radius: 50%;
     
     
 }
