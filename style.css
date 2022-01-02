@@ -9,17 +9,12 @@ body {
     font-family: 'Prompt', sans-serif;
     display: flex;
     flex-direction: column;
-    padding-left: 30vw;
-    width: 70vw;
+    padding-left: 30%;
+   
 }
 
 block {
     width: 30vw; height: 100vh;
-    /* background-color: rgb(140, 222, 233);
-    color: rgb(27, 4, 4);
-    animation-name: colors;
-    animation-duration: 10s;
-    animation-iteration-count: infinite; */
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -27,7 +22,7 @@ block {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 #blockimg {
@@ -37,13 +32,19 @@ block {
 }
 
 section {
+    display: flex;
+    flex-wrap: wrap;
     width: 70vw;
     height: 100vh;
-    padding: 100px;
+    justify-content: space-around;
+    flex-direction: column;
+   
+
 }
 
 #heading {
     background-color: rgb(243, 190, 190);
+   
    
     padding: 50px 20px;
 }
@@ -92,22 +93,24 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding: auto;
     font-size: 20px;
     padding-top: 10px;
 }
 
 #description {
     padding: 100px 100px;
-    margin-top: 100px;
+    
 
 }
 
 #scroll {
-   
-    margin-top: 350px;
-    text-align: left;
-    padding-left: 50%;
+  
+   height: 50px;
+   text-align: left;
+   padding-left: 50%;
+   display: flex;
+   flex-direction: row;
     
 }
 
@@ -117,7 +120,7 @@ ul {
 }
 
 div #paragraph {
-   padding: 20px;
+   padding: 10px 20px;
   
    height: fit-content;
    display: flex;
@@ -128,7 +131,7 @@ div #paragraph {
   
 }
 
-#aboutme img{
+/* #aboutme img{
     display: block;
     margin-top: 15px;
     margin-left: auto;
@@ -136,39 +139,58 @@ div #paragraph {
     width: 350px;
     height: 450px;
     box-shadow: 0 0 10px grey;
-    border-radius: 50%;
-    
-    
-}
+    border-radius: 50%;   
+} */
 
 #Aboutme{
     display: flex;
-    flex-direction: column;
-    width: 70vw; 
-    height: 100vh;
-    text-align: left;
-    padding: 100px 100px;
+    flex-wrap: wrap;
+    
+   
+    
+    padding: 30px 30px;
+    height: fit-content;
+    
 }
+
+
+
+
 
 
 #article{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 5px;
+   
    
    
    
 }
 
 article {
-    height: 180px;
-    margin: 30px 10px;
+    height: fit-content;
+    margin: 10px 10px;
     background-color: rgb(243, 190, 190);
     padding: 15px;
 }
 
 #sectionwork {
     background-color:rgb(243, 190, 190) ;
+    padding: 30px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 50px;
+    width: 70vw;
+    height: 100vh;
+  
+    text-align: center;
+  
 }
 
 #work, #project, #github {
@@ -192,14 +214,116 @@ article {
     margin-right: auto;
     width: 400px;
     height: 200px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 30px grey;
    
     
     
 }
 
+#form {
+    padding-left: 0;
+}
+   
 
+
+#contactparagraph {
+    text-align: center;
+    padding: 25px;
+}
+
+#emaillink {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    padding: 15px 15px;
+    margin-top: 20px;
+    
+    text-align: center;
+    background-color: rgb(243, 190, 190);
+
+
+}
+
+#messagebox {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 900px;
+    
    
+   margin-top: 20px;
+    background-color: rgb(243, 190, 190);
+    text-align: left;
+    
+    padding-top: 30px;
+}
+
+#messagebox p{
+    text-align: center;
+    
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    margin: auto;
    
+    
+    
+    
+}
+
+input {
+    
+    width: 500px;
+    height: 40px;
+ 
+}
+
+textarea {
+    width: 500px;
+    height: 80px;
+}
+
+
+  @media screen and (max-width: 768px) {
+      input {
+      
+        width: 300px;
+        height: 40px;
+        margin: auto;
+      }
+
+        textarea {
+        width: 300px;
+        height: 80px;
+        margin: auto;
+        }
+
+        
+
+  }
+   
+  @media screen and (min-width: 600px) {
+    input {
+    
+      width: 300px;
+      height: 40px;
+      margin: auto;
+    }
+
+      textarea {
+      width: 300px;
+      height: 80px;
+      margin: auto;
+      }
+
+      
+
+}
+ 
+
 
 

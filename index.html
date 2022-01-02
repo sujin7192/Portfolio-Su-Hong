@@ -25,13 +25,13 @@
             <div id="nav">
                 <ul>
                     <li><a href="#Aboutme">About me</a></li>
-                    <li><a href="#section work">Work</a></li>
+                    <li><a href="#sectionwork">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         
             <div id="scroll">
-                <p id="scrollrotate">Scroll  <i style="font-size:36px" class="fa">&#xf141;</i></p> 
+                <p id="scrollrotate">Scroll<i style="font-size:36px" class="fa">&#xf141;</i></p> 
             </div>
         
         </section>
@@ -106,12 +106,12 @@
                 </div>
                 
                 <div id="project">
-                    <p>View Projects<i style="font-size:36px" class="fa">&#xf141;</i></p>
+                    <h3>View Projects<i style="font-size:36px" class="fa">&#xf141;</i></h3>
                     <img id="imgproject" src="Image/img_meeting.jpg" alt="img of people working together">
                 </div>
                 
                 <div id="github">
-                    <p>Github<i style="font-size:36px" class="fa">&#xf141;</i></p>
+                    <h3>Github<i style="font-size:36px" class="fa">&#xf141;</i></h3>
                     <a href="https://github.com/sujin7192"><img id="imggithub" src="Image/img_github.jpg" alt="img of github page"></a> 
                 </div>
         </section>   
@@ -119,24 +119,56 @@
         <!-- contact me -->
  
         <section id="contact">
-                <div id=form>
-                    <p>Contact Me<i style="font-size:24px" class="fa">&#xf141;</i></p>
-                    <a href="mailto: sujin7192@hotmail.com" target="_blank"><i sytle="font-size:60px" class="fa">Email Me &nbsp&#xf199;</i></a>
+            <div id=form>
+                <div id="contactheading">
+                    <h3>Contact Me<i style="font-size:24px" class="fa">&#xf141;</i></h3>
+                    
+                </div> 
+
+                <div id="contactparagraph">
+                    <p>Looking for the opportunities to work with awesome team!<br>Contact Me!!</p>
+                </div>
                 
-                    <p>Message Me</p>
-                    <p>First Name</p><input type="text" placeholder="First Name">
-                    <p>Last Name</p><input type="text" placeholder="Last Name">
-                    <p>Your Email</p><input type="text" placeholder="Your Email">
-                    <p>Subject</p><input type="text" placeholder="Subject">
-                    <p>Message</p><input type="text" placeholder="Message">
-                </div>    
+                <div id="emaillink">
+                    <a href="mailto: sujin7192@hotmail.com" target="_blank">Send Me Email</a>
+                </div>
+
+                <div id="messagebox">
+                    <div>
+                        <p>Message Me</p>
+                    </div>
+                    
+                    <div class="labels">
+                        <label for="firstname">First Name</label><br>
+                        <input id="firstname"></input><br>                   
+                        <label for="lastname">Last Name</label><br>
+                        <input id="lastname"></input>
+                    </div>
+
+                    <div class="labels">
+                        <label for="email">Your Email</label><br>
+                        <input id="youremail"></input>
+                    </div>
+
+                    <div class="labels">
+                        <label for="subject">Subject</label><br>
+                        <input id="subject"></input>
+                    </div>
+                  
+                    <div class="labels">
+                        <label for="message">Messsage</label><br>
+                        <textarea maxlength="500" id="message"></textarea>
+                    </div>
+                 </div>
+            </div>    
         </section>
 
        
            
-    <section id="footer">
-      footer
+        <footer>
+            <p>su Hong 2021-12</p>
+        </footer>
     
     </div>
-</body>
+    </body>
 </html>
