@@ -9,7 +9,7 @@ https://github.com/sujin7192/Portfolio-Su-Hong/blob/dc1aa2af3c2570f2903796197992
 * Tools used : HTML, CSS, Chrome (latest version)
 
 * Demo clip
-https://loom.com/share/b2d9b959daaa4f83b67f7fd6836ad183
+https://github.com/sujin7192/Portfolio-Su-Hong/blob/main/Image/Demo%20clip.mp4
 
 * Github Repo
 https://github.com/sujin7192/Portfolio-Su-Hong
