@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@100&family=Poppins:wght@900&family=Prompt&display=swap');
 
-
+:root {
+    font-size: 16px;
+    --background: rgb(243, 190, 190);
+    --base: rgb(226, 226, 212);
+}
 
 body {
     font-family: 'Alata', sans-serif;
@@ -10,10 +14,25 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 30%;
-   
+    width: 100vw;
+    background-color: var(--base);
+    min-width: 460px;
+}
+/* font style */
+h1 {
+    font-size: 2rem;
+} 
+
+h2 {
+    font-size: 1.5rem;
 }
 
-block {
+li, h4 {
+    font-style: italic;
+}
+
+/* block */
+#block {
     width: 30vw; height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,51 +42,45 @@ block {
     top: 0;
     bottom: 0;
     z-index: 1;
+    background-color:var(--base);
 }
 
 #blockimg {
     width: 30vw;
     height: 100vh;
-    filter:saturate(70%) sepia(50%) 
 }
 
 section {
     display: flex;
-    flex-wrap: wrap;
     width: 70vw;
     height: 100vh;
     justify-content: space-around;
     flex-direction: column;
-   
-
 }
 
-#heading {
-    background-color: rgb(243, 190, 190);
-   
-   
-    padding: 50px 20px;
-}
-h1 {
-    font-size: 2rem;
-   
-    
-} 
-
-h2 {
-    font-size: 1.5rem;
+/* Nav styling */
+#nav {
+    padding:50px 0 100px 10vw;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* nav li animation */
 li {
     width: 150px;
     height: 50px;
-    background-color: rgb(243, 152, 152);
+    background-color: var(--background);
     margin: 10px;
     padding: 5px;
     text-align: center;
     border-style: dotted;
     border-color: turquoise;
-
 }
 
 li:hover {
@@ -87,31 +100,26 @@ li:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: auto;
-    font-size: 20px;
-    padding-top: 10px;
+/* each section & div styling */
+#heading {
+    background-color: var(--background);
+    padding: 50px 20px;
+    height: fit-content;
+    line-height: center;
 }
 
 #description {
-    padding: 100px 100px;
-    
-
+    padding: 50px 100px;
 }
 
 #scroll {
-  
    height: 50px;
    text-align: left;
    padding-left: 50%;
    display: flex;
    flex-direction: row;
-    
 }
 
 #scrollrotate {
@@ -121,76 +129,50 @@ ul {
 
 div #paragraph {
    padding: 10px 20px;
-  
    height: fit-content;
    display: flex;
    flex-direction: column;
-
-   
-   
-  
 }
-
-/* #aboutme img{
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 450px;
-    box-shadow: 0 0 10px grey;
-    border-radius: 50%;   
-} */
 
 #Aboutme{
     display: flex;
     flex-wrap: wrap;
-    
-   
-    
+    flex-direction: column;
     padding: 30px 30px;
     height: fit-content;
-    
 }
-
-
-
-
-
 
 #article{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding-top: 5px;
-   
-   
-   
-   
 }
 
 article {
     height: fit-content;
     margin: 10px 10px;
-    background-color: rgb(243, 190, 190);
+    background-color: var(--background);
     padding: 15px;
 }
 
 #sectionwork {
-    background-color:rgb(243, 190, 190) ;
+    background-color:var(--background);
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 10px;
 }
 
 #contact {
     display: flex;
     flex-direction: column;
-    
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 70vw;
-    height: 100vh;
-  
+    height: fit-content;
     text-align: center;
-  
 }
 
 #work, #project, #github {
@@ -200,12 +182,7 @@ article {
     flex-direction: column;
     height: fit-content;
     text-align: left;
-
 }
-
-
-
-
 
 #imgwork, #imgproject, #imggithub{
     display: block;
@@ -215,16 +192,7 @@ article {
     width: 400px;
     height: 200px;
     box-shadow: 0 0 30px grey;
-   
-    
-    
-}
-
-#form {
-    padding-left: 0;
-}
-   
-
+   }
 
 #contactparagraph {
     text-align: center;
@@ -237,49 +205,36 @@ article {
     margin: auto;
     padding: 15px 15px;
     margin-top: 20px;
-    
     text-align: center;
-    background-color: rgb(243, 190, 190);
-
-
+    background-color: var(--background);
 }
 
 #messagebox {
     display: flex;
     flex-direction: column;
     width: 70vw;
-    height: 900px;
-    
-   
-   margin-top: 20px;
-    background-color: rgb(243, 190, 190);
+    height: 100vh;
+    margin-top: 20px;
+    background-color: var(--background);
     text-align: left;
-    
     padding-top: 30px;
 }
 
 #messagebox p{
     text-align: center;
-    
 }
 
 .labels {
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding: 20px;
+    padding: 5px;
     margin: auto;
-   
-    
-    
-    
 }
 
 input {
-    
     width: 500px;
     height: 40px;
- 
 }
 
 textarea {
@@ -287,43 +242,88 @@ textarea {
     height: 80px;
 }
 
+footer {
+    background-color: var(--base);
+    font-size: 13px;
+    color: gray;
+    text-align: right;
+    padding-right: 15px;
+}
 
-  @media screen and (max-width: 768px) {
-      input {
-      
-        width: 300px;
-        height: 40px;
-        margin: auto;
-      }
+/* media query */
+@media screen and (min-width: 768px){
+    #blocknav {
+        display: none;
+    }
+}
 
-        textarea {
-        width: 300px;
-        height: 80px;
-        margin: auto;
-        }
-
-        
-
-  }
-   
-  @media screen and (min-width: 600px) {
+@media screen and (max-width: 768px) {
     input {
-    
-      width: 300px;
-      height: 40px;
-      margin: auto;
+    width: 300px;
+    height: 40px;
+    margin: auto;
     }
 
-      textarea {
-      width: 300px;
-      height: 80px;
-      margin: auto;
-      }
+    textarea {
+    width: 300px;
+    height: 80px;
+    margin: auto;
+    }
 
-      
+    #imgwork, #imgproject, #imggithub{
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 100px;
+        box-shadow: 0 0 30px grey;
+        }
 
+    body {
+        padding: 0;
+        width: 100vw;
+    }
+
+    section {
+        width: 100vw;
+    }
+
+    #form, #messagebox {
+        width: 100vw;
+    }
+
+    #block {
+        width: 100vw; height: 50vh;
+        
+        position: relative;
+        justify-content: space-around;
+        
+        background-color:var(--background);
+        display: flex;
+        flex-direction: row;
+    }
+
+    #blockimg {
+        position: relative;
+        width:250px;
+        height: 330px;
+        padding: 30px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #blocknav {
+        display: flex;
+    }
 }
- 
 
+  
+
+  
+   
+  
 
 
