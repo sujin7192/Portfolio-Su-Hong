@@ -4,7 +4,7 @@
     font-size: 16px;
     --background: rgb(243, 190, 190);
     --base: rgb(226, 226, 212);
-    --white: var(--white);
+    --white:white;
 }
 
 body {
@@ -26,8 +26,6 @@ body {
     background-color: var(--base);
     margin-left: 400px;
 }
-    
-   
 
 /* font style */
 h1 {
@@ -51,7 +49,6 @@ li, h4 {
     float: left;
     z-index: 1;
     background-color:var(--base);
-   
 }
 
 #blockimg {
@@ -180,8 +177,6 @@ article {
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
- 
-    
     height: fit-content;
     text-align: center;
 }
@@ -223,7 +218,7 @@ article {
 #messagebox {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
     margin-top: 20px;
     background-color: var(--background);
     text-align: left;
@@ -346,7 +341,6 @@ footer {
         height: 100vh;
         margin: 0;
         background-color: var(--base);
-       
     }
 
     #container {
@@ -443,8 +437,42 @@ footer {
 }
 
 
+/* media query @360px */
+@media screen and (max-width: 360px) {
+    li {
+        width: 90px;
+        height: 30px;
+        background-color: var(--base);
+        font-size: 0.7em;
+    }   
+    
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.0rem;
+    }
+
+    #description {
+        padding: 10px 50px 10px 50px;
+    }
+
+    #heading {
+        padding-top: 10px;
+    }
+
+    #scrollrotate {
+        font-size: 0.8rem;
+    }
+
+    #blockimg {
+        position: relative;
+        width: 200px;
+        height: 300px; 
+        border-radius: 10%
+    }
+}
+
 
    
-  
-
-
