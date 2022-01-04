@@ -4,6 +4,7 @@
     font-size: 16px;
     --background: rgb(243, 190, 190);
     --base: rgb(226, 226, 212);
+    --white: var(--white);
 }
 
 body {
@@ -13,11 +14,21 @@ body {
     font-family: 'Prompt', sans-serif;
     display: flex;
     flex-direction: column;
-    padding-left: 30%;
-    width: 100vw;
-    background-color: var(--base);
-    min-width: 460px;
+    max-width: 1200px;
+    background-color: var(--white);
+    margin: auto;
 }
+
+#container {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--base);
+    margin-left: 400px;
+}
+    
+   
+
 /* font style */
 h1 {
     font-size: 2rem;
@@ -33,34 +44,33 @@ li, h4 {
 
 /* block */
 #block {
-    width: 30vw; height: 100vh;
+    width: 400px; height: 100vh;
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    float: left;
     z-index: 1;
     background-color:var(--base);
+   
 }
 
 #blockimg {
-    width: 30vw;
+    width: 400px;
     height: 100vh;
 }
 
 section {
     display: flex;
-    width: 70vw;
+    width: 800px;
     height: 100vh;
     justify-content: space-around;
     flex-direction: column;
+    padding: auto;
 }
 
 /* Nav styling */
 #nav {
-    padding:50px 0 100px 10vw;
+    padding:50px 0 100px 100px;
 }
 
 ul {
@@ -170,7 +180,8 @@ article {
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 70vw;
+ 
+    
     height: fit-content;
     text-align: center;
 }
@@ -212,7 +223,6 @@ article {
 #messagebox {
     display: flex;
     flex-direction: column;
-    width: 70vw;
     height: 100vh;
     margin-top: 20px;
     background-color: var(--background);
@@ -229,7 +239,7 @@ article {
     flex-direction: column;
     width: 500px;
     padding: 5px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 input {
@@ -243,6 +253,7 @@ textarea {
 }
 
 footer {
+    width: 800px;
     background-color: var(--base);
     font-size: 13px;
     color: gray;
@@ -250,14 +261,27 @@ footer {
     padding-right: 15px;
 }
 
-/* media query */
-@media screen and (min-width: 768px){
+/* media query @1200px */
+@media screen and (min-width: 1199px){
     #blocknav {
         display: none;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        background-color: var(--base);
+    }
+
+    #container {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
     input {
     width: 300px;
     height: 40px;
@@ -280,10 +304,99 @@ footer {
         box-shadow: 0 0 30px grey;
         }
 
-    body {
-        padding: 0;
+    section {
         width: 100vw;
     }
+
+    #form, #messagebox {
+        width: 100vw;
+    }
+
+    #block {
+        width: 100vw;
+        height: fit-content;
+        position: relative;
+        justify-content: space-around;
+        background-color:var(--background);
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    #blockimg {
+        position: relative;
+        width: 350px;
+        height: 420px; 
+        border-radius: 10%
+    }
+
+    #nav {
+        display: none;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+/* media query @520px */
+@media screen and (max-width: 520px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        background-color: var(--base);
+       
+    }
+
+    #container {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #description {
+        padding: 50px;
+    }
+
+
+    li {
+        width: 120px;
+        height: 30px;
+        background-color: var(--base);
+        font-size: 0.8em;
+    }   
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+
+    input {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    }
+
+    textarea {
+    width: 300px;
+    height: 80px;
+    margin: auto;
+    }
+
+    #imgwork, #imgproject, #imggithub{
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 100px;
+        box-shadow: 0 0 30px grey;
+        }
 
     section {
         width: 100vw;
@@ -294,35 +407,43 @@ footer {
     }
 
     #block {
-        width: 100vw; height: 50vh;
-        
+        width: 100vw;
+        height: fit-content;
         position: relative;
         justify-content: space-around;
-        
         background-color:var(--background);
         display: flex;
         flex-direction: row;
+        padding-top: 30px;
+        padding-left: 10px;
     }
 
     #blockimg {
         position: relative;
-        width:250px;
-        height: 330px;
-        padding: 30px;
+        width: 230px;
+        height: 350px; 
+        border-radius: 10%
     }
 
     #nav {
         display: none;
     }
 
-    #blocknav {
-        display: flex;
+    .labels {
+        width: 100vw;
+    }
+
+    label {
+        padding-left: 5px;
+    }
+
+    footer {
+        width: 100vw;
     }
 }
 
-  
 
-  
+
    
   
 
